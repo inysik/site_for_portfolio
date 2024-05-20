@@ -1,0 +1,26 @@
+body {
+  --buttonColor: rgba(255, 83, 0, 0.9);
+  --colorRed: rgba(255, 83, 0, 1);
+  --colorBlack: rgb(0, 0, 0);
+  --colorWhite: rgb(255, 255, 255);
+  --colorWhiteOne: rgb(255, 255, 255);
+  --colorOrange: rgba(255, 247, 244, 1);
+  --colorGrey: rgba(123, 123, 123, 1);
+  --colorBlues: rgba(0, 172, 255, 1);
+  --colorBlackBtn: rgba(55, 55, 55, 1);
+  --colorBorderRed: rgba(255, 83, 0, 0.4);
+  --colorBorderBlack: rgba(0, 0, 0, 0.1);
+  --colorGreyTwo: rgba(123, 123, 123, 1);
+  --bugroundFooter: rgba(55, 55, 55, 1);
+  --colorVeryWhite: rgb(255, 255, 255);
+}
+body.dark-theme {
+  --colorBlack: rgb(255, 255, 255);
+  --colorVeryWhite: rgb(255, 255, 255);
+  --colorWhite: rgb(0, 0, 0);
+  --colorWhiteOne: rgba(36, 37, 38, 1);
+  --colorOrange: rgba(36, 37, 38, 1);
+  --colorGrey: rgba(255, 255, 255, 1);
+  --colorGreyTwo: rgba(123, 123, 123, 1);
+  --bugroundFooter: rgba(55, 55, 55, 1);
+}

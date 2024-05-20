@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Jost&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@1,300;1,400&family=Roboto:ital,wght@0,100;1,300&family=Seymour+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+$colorWhite: rgb(255, 255, 255);
+
+
+
+$buttonFontText: Poppins;
+$fontText: Work Sans;
+
+$fontWeight400: 400;
+$fontWeight500: 500;
+$fontWeight600: 600;
+$fontWeight700: 700;
+
+
+// width height for icons 
+
+$sizeIcons: 40px;
+
+// size 
+
+$fontSizeXXS:16px;
+$fontSizeXS:20px;
+$fontSizeS:25px;
+$fontSizeM:30px;
+$fontSizeL:40px;
+$fontSizeXL:48px;
+
+//line-height
+
+$lineHeigthXS:25px;
+$lineHeigthS:30px;
+$lineHeigthM:40px;
+$lineHeigthL:50px;
+$lineHeigthXL:60px;
+
+
+
+
+@mixin flex($justifyContent: center, $alignItems: center) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+
+}
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
