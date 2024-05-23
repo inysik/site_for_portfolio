@@ -1,29 +1,22 @@
 @import "./variable";
 @import "./bodyToggle";
 
-@media (max-width: 768px) and (min-width: 376px) {
- 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  a,
-  li {
-    all: unset;
-  }
+
+@media (max-width: 768px) and (min-width: 376px) {
+
+  
   body {
     background-color: var(--colorWhite);
   }
 
   a:focus {
-    content: "";
+   
     color: var(--colorRed);
   }
 
   .icons__logos a:focus {
-    border: 2px solid black;
+    border: 2px solid var(--colorBlack);
   }
 
   .button {
@@ -106,7 +99,6 @@
     font-size: $fontSizeS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthS;
-    text-align: left;
 
     &__title-banner {
       font-size: $fontSizeL;
@@ -121,31 +113,24 @@
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorGrey);
     padding-top: 15px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+   @include maxLines(4);
     }
 
     .banner-paragraph {
         margin-top: 10px;
         margin-bottom: 50px;}
 
-  .banner-paragraph,.aboutUs__paragraph {
-
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+  .banner-paragraph,.about-us__paragraph {
+  
+   @include maxLines(3)
   
   }
 
-  .conteiner {
+  .container {
     @include flex(center, center);
-    // gap: 38px;
+   
   
   }
 
@@ -154,7 +139,7 @@
     flex-direction: column;
     padding-top: 73px;
     padding-bottom: 73px;
-    // width: 34, 5%;
+    
   }
 
   .image-content {
@@ -200,7 +185,6 @@
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorGrey);
   }
 
@@ -220,14 +204,15 @@
   }
 
   .cards-section {
-    // margin-top: 150px;
-    @include flex(center, center);
+   
+    @include flex;
     gap: 10px;
     
   }
 
   .card {
-    @include flex(center, center);
+    
+    @include flex;
     flex-direction: column;
     box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
     background-color: var(--colorWhiteOne);
@@ -276,17 +261,17 @@
 
   .greys {
     background-color: var(--colorGreyTwo);
-    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 5px 15px 0px var(--colorShadowGrey); 
   }
 
   .blues {
     background-color: var(--colorBlues);
-    box-shadow: 4px 5px 15px 0px rgba(0, 194, 255, 0.4);
+    box-shadow: 4px 5px 15px 0px var(--colorShadowBlue);
   }
 
   .blacks {
     background-color: var(--colorBlackBtn);
-    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 5px 15px 0px var(--colorShadowBlack) ;
   }
   .about-us {
     background-color: var(--colorWhite);
@@ -297,13 +282,13 @@
     margin-bottom: 80px;
   }
 
-  .our-expereince {
+  .our-experince {
     background-color: var(--colorOrange);
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  .our-expereince__cards {
+  .our-experince__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
@@ -313,7 +298,7 @@
     background-color: var(--colorWhite);
 
     padding: 10px;
-    @include flex(center, center);
+    @include flex;
     flex-direction: column;
     box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
     background-color: var(--colorWhite);
@@ -331,13 +316,13 @@
     font-size: $fontSizeS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthS;
-    text-align: left;
     color: var(--colorBlack);
 
   }
 
   .team-member {
-    @include flex(center, center);
+      
+    @include flex;
     flex-direction: column;
     padding-bottom: 74px;
     padding-top: 74px;
@@ -373,9 +358,9 @@
   }
 
   .our-work {
-    display: flex;
+    
+    @include flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 120px;
     background-color: var(--colorWhite);
   }
@@ -403,7 +388,6 @@
     font-size: $fontSizeXS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorGrey);
   }
 
@@ -413,20 +397,17 @@
     font-size: $fontSizeXS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorRed);
   }
 
   .clients-feedback,
   .our-blog,
   .contact-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     flex-direction: column;
     background-color: var(--colorWhite);
   }
-  .feedback-conteiner{
+  .feedback-container{
     padding-left:3% ;
     padding-right:3% ;
   }
@@ -452,7 +433,7 @@
     background-color: var(--colorRed);
     color: var(--colorWhite);
     padding-left: 5%;
-    padding-right: 5px;
+    padding-right: 5%;
     position: relative;
   }
 
@@ -463,17 +444,15 @@
     font-size: $fontSizeS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthS;
-    text-align: start;
     color: var(--colorVeryWhite);
   }
 
-  .profesional {
+  .profession  {
     padding-bottom: 25px;
     font-family: $fontText;
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
     line-height: $lineHeigthXS;
-    text-align: start;
     color: var(--colorVeryWhite);
   }
 
@@ -482,13 +461,9 @@
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorVeryWhite);
-     overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    padding-right: 3%;
+     padding-right: 3%;
+     @include maxLines(4);
   }
 
   .img-card {
@@ -506,6 +481,7 @@
   }
 
   .btn__pagination {
+ 
     @include button-reset;
   }
 
@@ -539,8 +515,7 @@
  
 
   .slide__card {
-    // display: grid;
-    // grid-template-columns: repeat(1,2fr);
+  
     background-color: var(--colorWhiteOne);
     box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
     padding: 25px;
@@ -554,12 +529,11 @@
     width:67%;
   }
 
-  .profesional {
+  .profession {
     font-family: $fontText;
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorRed);
   }
 
@@ -568,26 +542,22 @@
     font-size: $fontSizeXS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorBlack);
   }
 
   .card__author {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    @include flex(start);  
     gap: 10px;
     padding-top: 29px;
     color: var(--colorGreyTwo);
     font-family: $fontText;
   }
 
-  .author-famili {
+  .author-name {
     font-family: $fontText;
     font-size: $fontSizeS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthS;
-    text-align: left;
     color: var(--colorBlack);
   }
 
@@ -596,7 +566,6 @@
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorGreyTwo);
   }
 
@@ -645,7 +614,6 @@
     font-size: $fontSizeS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthM;
-    text-align: left;
   }
 
   .text-grey {
@@ -653,7 +621,6 @@
     font-size: $fontSizeXS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthXS;
-    text-align: left;
     color: var(--colorGrey);
   }
 
@@ -667,7 +634,6 @@
     font-size: $fontSizeM;
     font-weight: $fontWeight600;
     line-height: $lineHeigthM;
-    text-align: left;
   }
 
   .client-form {
@@ -707,8 +673,7 @@
   }
 
   .logos {
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between);
     gap: 50px;
     margin-bottom: 120px;
   }
@@ -738,7 +703,6 @@
     font-size: $fontSizeXXS;
     font-weight: $fontWeight600;
     line-height: $lineHeigthXS;
-    text-align: left;
   }
 
   .footer-column {
@@ -753,17 +717,12 @@
  
 
   .text-white {
-    color: var
-    (--colorVeryWhite);
+    color: var(--colorVeryWhite);
     font-family: $fontText;
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
     line-height: $lineHeigthXS;
-    text-align: left;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    @include maxLines(3);
     
 }
 
