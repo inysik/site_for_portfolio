@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Global Inform</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';">
+
 </head>
 
 <body class="light-theme">
     <header class="navigation center">
-        <!-- h2 должен идти после h1, у тебя наоборот, можно посмотреть у других сайтов куда они вкладывают логотип -->
+
         <h2 class="logo"><span class="red">Digi</span>
             <span class="black">ency</span>
         </h2>
         <ul class="menu-list">
             <li class="menu-list_item"><a href="/">Home</a></li>
             <li class="menu-list_item"> <a href="./AboutUs">About Us</a></li>
-            <li class="menu-list_item"><a href="./OurWork">Our Work</a></li>
+            <li class="menu-list_item"><a href="/src/our-blog/OurBlog.html">Our Work</a></li>
             <li class="menu-list_item"><a href="./Clients">Clients</a></li>
             <li class="menu-list_item"><a href="./OurBlog">Our Blog</a></li>
             <li class="menu-list_item"><a href="./ContactUs">Contact Us</a></li>
@@ -139,13 +141,13 @@
                 <p class="paragraph about-us__paragraph">Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
                     faucibus est, dui
                     interdum ut amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.</p>
-                <!-- button и btn, нужно придерживаться одного стиля, но лучше без сокращений -->
+                
                 <button class="button position__btn">Contact Us</button>
             </div>
         </div>
         <section class="cards-section">
             <article class="card">
-                <!-- что за класс reds? такого слова в английском нет  -->
+              
                 <button class="round-btn reds"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                         viewBox="0 0 30 30" fill="none">
                         <g clip-path="url(#clip0_141_575)">
@@ -162,7 +164,7 @@
                 <p class="black text">World leader in consulting and finance</p>
             </article>
             <article class="card">
-                <!-- что такое greys? -->
+               
                 <button class="round-btn greys"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                         viewBox="0 0 30 30" fill="none">
                         <g clip-path="url(#clip0_141_577)">
@@ -179,7 +181,7 @@
                 <p class="black text">A focused team with a specialized skill</p>
             </article>
             <article class="card">
-                <!-- что такое blues? -->
+              
                 <button class="round-btn blues"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                         viewBox="0 0 30 30" fill="none">
                         <g clip-path="url(#clip0_141_579)">
@@ -196,7 +198,7 @@
                 <p class="black text">Trusted and professional advisors for you</p>
             </article>
             <article class="card">
-                <!-- что такое blacks -->
+                
                 <button class="round-btn blacks"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none">
                         <path
@@ -225,11 +227,9 @@
                     interdum ut amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.</p>
                 <button class="button position__btn">Contact Us</button>
             </div>
-            <!-- our-experience__cards -->
             <section class="our-experince__cards">
                 <article class="cards">
-                    <!-- слишком много вторых заголовков на странице, тут можно h3 уже ставить  -->
-                    <!-- что такое text-num?  -->
+                  
                     <h2 class="card-name-number">250+</h2><span class="black text-num">Global Customer</span>
                 </article>
                 <article class="cards">
@@ -245,7 +245,7 @@
         </div>
     </section>
     <section class="team-member center">
-        <!-- title не span -->
+      
         <span class="title-section position__title">Team Member</span>
         <h2 class="heading position__heding">
             <p class="black">We Have </p>
@@ -255,7 +255,7 @@
         <section class="team-cards">
             <article class="team-cards__card">
                 <img class="img-member" loading="lazy" src="./img/teamMember1Image.jpg" alt="">
-                <!-- меньше спанов использовать нужно, это не семантические теги, можно посмотреть на других сайтах как они сделали такие штуки -->
+        
                 <p class="text fio">Gustavo Herwitz</p>
                 <p class="text">UI/UX Designer</p>
             </article>
@@ -277,7 +277,7 @@
         </section>
     </section>
     <section class="our-work center">
-        <!-- title -->
+        
         <p class="title-section position__title">Our Work</p>
         <h2 class="heading position__heading">
             <p class="black">We Have Some </p>
@@ -293,9 +293,9 @@
             </ul>
         </nav>
         <section class="works">
-            <!-- columns? не говорящее название -->
+          
             <div class="colums">
-                <!-- зачем в article заворачивать? Тут только картинка -->
+            
                 <article class="works__item" id="1"><img class="img-slide" loading="lazy" src="./img/ourWork1Image.png"
                         alt=""></article>
                 <article class="works__item" id="2"><img class="img-slide" src="./img/ourWork2Image.jpg" alt="">
@@ -393,9 +393,9 @@
                 <article class="slide__card">
                     <div class="card_content">
                         
-                        <h4 class="profession">Graphic Design</h4>
-                        <!-- h3 не может идти после h4 -->
-                        <h3 class="other-card">35 Stellar Graphic Design Blogs to Keep You Educated and Inspired</h3>
+                        <h3 class="profession">Graphic Design</h3>
+                      
+                        <h4 class="other-card">35 Stellar Graphic Design Blogs to Keep You Educated and Inspired</h4>
                         <div class="card__author">
                             <img loading="lazy" src="./img/ourBlogProfile.png" alt="">
                             <div class="card_blog">
@@ -423,7 +423,7 @@
         </div>
     </section>
     <section class="contact-us center">
-        <!-- title -->
+      
         <p class="title-section position__title">Contact Us</p>
         <h2 class="heading position__heading">
             <p class="black">Feel </p>
@@ -474,10 +474,10 @@
                 </section>
             </div>
             <div class="form">
-                <!-- max-height max-width можно унести в css -->
+               
                 <img loading="lazy" src="./img/ImageForm.png" class="img-form" alt="" max-height="auto"
                     max-width="auto">
-                <!-- ниже в теге в ворме прописываем action куда отправится форма заполненая -->
+               
                 <form class="forms">
                     <h3 class="title-form">
                         <p class="black">Send Your</p>
@@ -564,7 +564,7 @@
 
     </footer>
 
-    <script src="./js/toggle.js"></script>
+    <script src="./src/js/toggle.js"></script>
 </body>
 
 </html>
