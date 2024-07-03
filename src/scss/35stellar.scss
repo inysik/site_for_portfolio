@@ -1,0 +1,134 @@
+@import "./variable.scss";
+@import "./bodyToggle.scss";
+
+
+
+.micro-articales{
+    @include flex(center,center);
+    flex-direction: column;
+    
+    
+}
+.states{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    position: relative;
+    height: auto;
+   
+}
+.img-articales{
+    width: 100%;
+    margin-top: 30px;
+
+}
+.img-top{
+    margin-top: 50px;
+}
+.p{
+    margin-top:45px ;
+}
+
+.auther{
+    margin-top: 60px;
+    background-color: var(--colorOrange);
+    padding: 20px;
+    @include flex;
+    gap: 20px;
+}
+.auther-name{
+    margin-top: 18px;
+        font-family: $fontText;
+        font-size: $fontSizeXS;
+        font-weight: $fontWeight500;
+        line-height: $lineHeigthXS;
+       
+}
+.auther-profession{
+    margin-top: 12px;
+    font-family: $fontText;
+    font-size: $fontSizeXXS;
+    font-weight: $fontWeight400;
+    line-height: $lineHeigthXS;
+    color: var(--colorRed);
+
+}
+.comments{
+    margin-top: 120px;
+}
+
+.menu{
+
+font-family: $fontText;
+font-size: $fontSizeS;
+font-weight: $fontWeight500;
+line-height: $lineHeigthS;
+@include flex(space-between,center)
+
+}
+
+.submenu{
+ margin-top: 18px;
+font-family: $fontText;
+font-size: $fontSizeXS;
+font-weight: $fontWeight500;
+line-height: $lineHeigthXS;
+@include flex(space-between,center);
+color: var(--colorGreyTwo);
+}
+#text-input-comment{
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+}
+
+.container-comment{
+    margin-top: 40px;
+}
+
+.comment-card{
+    @include flex(center,flex-start);
+    gap: 20px;
+    
+}
+
+.content-card{
+    @include flex(center,baseline);
+    flex-direction: column;
+
+}
+.sub-comment{
+    margin-top: 20px;
+    margin-left: 100px;
+    @include flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-text-comment{
+margin-top: 15px;
+font-family: $fontText;
+font-size: $fontSizeXXS;
+font-weight: $fontWeight400;
+line-height: $fontSizeXS;
+color: var(--colorGreyTwo);
+
+}
+.card-auther{
+
+font-family: $buttonFontText;
+font-size: $fontSizeS;
+font-weight: $fontWeight600;
+line-height: $lineHeigthS;
+text-align: left;
+color: var(--colorRed);
+}
+.pair{
+    display: flex;
+    align-items:center
+    ;
+    gap:7px;
+}

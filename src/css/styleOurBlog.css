@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Jost&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@1,300;1,400&family=Roboto:ital,wght@0,100;1,300&family=Seymour+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, li {
+  all: unset;
+}
+
 body {
   --buttonColor: rgba(255, 83, 0, 0.9);
   --colorRed: rgba(255, 83, 0, 1);
@@ -14,6 +24,9 @@ body {
   --colorGreyTwo: rgba(123, 123, 123, 1);
   --bugroundFooter: rgba(55, 55, 55, 1);
   --colorVeryWhite: rgb(255, 255, 255);
+  --colorShadowBlue: rgba(0, 194, 255, 0.4);
+  --colorShadowBlack: rgba(0, 0, 0, 0.4);
+  --colorShadowGrey: rgba(0, 0, 0, 0.4);
 }
 body.dark-theme {
   --colorBlack: rgb(255, 255, 255);
@@ -68,8 +81,9 @@ li {
 
 .container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: baseline;
+  flex-direction: column;
 }
 
 .content {
@@ -90,12 +104,11 @@ li {
 
 data,
 .author,
-.coment {
+.comment {
   font-family: Work Sans;
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
-  text-align: left;
   color: var(--colorGreyTwo);
 }
 
@@ -105,7 +118,6 @@ data,
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
-  text-align: left;
 }
 
 .text {
@@ -114,7 +126,6 @@ data,
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
-  text-align: left;
   color: var(--colorGreyTwo);
 }
 
@@ -131,7 +142,6 @@ data,
   font-size: 20px;
   font-weight: 500;
   line-height: 25px;
-  text-align: left;
   padding: 13px 23px;
   color: var(--colorVeryWhite);
   border-radius: 5px;
@@ -153,7 +163,6 @@ data,
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
-  text-align: left;
   color: var(--colorGreyTwo);
 }
 
@@ -167,7 +176,6 @@ data,
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
-  text-align: left;
   color: var(--colorBlack);
 }
 .last-test__items {
@@ -207,7 +215,6 @@ data,
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
-  text-align: left;
   padding-bottom: 30px;
 }
 .categories__list {
@@ -220,20 +227,19 @@ data,
   font-size: 20px;
   font-weight: 500;
   line-height: 25px;
-  text-align: left;
   color: var(--colorGreyTwo);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .item__count {
   border: 1px solid var(--colorGreyTwo);
   padding: 7px;
   font-family: Work Sans;
-  font-size: 12.8px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 15.82px;
-  text-align: left;
+  line-height: 15px;
 }
 
 .tags {
@@ -245,7 +251,6 @@ data,
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
-  text-align: left;
   padding-bottom: 30px;
 }
 
@@ -256,7 +261,6 @@ data,
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
   padding: 4px 12px;
   text-wrap: nowrap;
   color: var(--colorGreyTwo);
@@ -272,6 +276,7 @@ data,
   margin-top: 133px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 18px;
 }
 
@@ -289,7 +294,6 @@ data,
   font-size: 20px;
   font-weight: 500;
   line-height: 25px;
-  text-align: left;
 }
 
 a {
@@ -324,9 +328,6 @@ a {
     margin-left: 5%;
     margin-right: 5%;
   }
-  li {
-    all: unset;
-  }
   .banner {
     width: 100%;
     background-color: var(--colorOrange);
@@ -352,8 +353,9 @@ a {
   }
   .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: baseline;
+    flex-direction: column;
   }
   .content {
     padding-top: 60px;
@@ -371,12 +373,11 @@ a {
   }
   data,
   .author,
-  .coment {
+  .comment {
     font-family: Work Sans;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGreyTwo);
   }
   .title {
@@ -384,7 +385,6 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: left;
   }
   .text {
     margin-top: 18px;
@@ -392,8 +392,6 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
-    text-align: left;
     color: var(--colorGreyTwo);
   }
   .img-container {
@@ -409,7 +407,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     padding: 13px 22px;
     color: var(--colorVeryWhite);
     border-radius: 5px;
@@ -429,7 +426,6 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGreyTwo);
   }
   .last-test {
@@ -442,7 +438,6 @@ a {
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .last-test__items {
@@ -479,7 +474,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     padding-bottom: 20px;
   }
   .categories__list {
@@ -492,19 +486,18 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGreyTwo);
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .item__count {
     border: 1px solid var(--colorGreyTwo);
     padding: 7px;
     font-family: Work Sans;
-    font-size: 12.8px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 15.82px;
-    text-align: left;
+    line-height: 15px;
   }
   .tags {
     padding: 40px 18px;
@@ -515,7 +508,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     padding-bottom: 30px;
   }
   .btn-tags {
@@ -525,7 +517,6 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
     padding: 4px 12px;
     text-wrap: nowrap;
     color: var(--colorGreyTwo);
@@ -539,6 +530,7 @@ a {
     margin-top: 133px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 18px;
   }
   .pagination-btn {
@@ -554,10 +546,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
-  }
-  a {
-    all: unset;
   }
   .pagination-btn:hover {
     cursor: pointer;
@@ -571,9 +559,9 @@ a {
   .info {
     width: 90%;
     display: flex;
+    justify-content: center;
+    align-items: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
   }
   .info-card {
     display: flex;
@@ -584,9 +572,6 @@ a {
   .center {
     margin-left: 3%;
     margin-right: 3%;
-  }
-  li {
-    all: unset;
   }
   .banner {
     width: 100%;
@@ -613,12 +598,13 @@ a {
   }
   .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: baseline;
+    flex-direction: column;
   }
   .content {
     padding-top: 50px;
-    padding-bottom: 600px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -633,12 +619,11 @@ a {
   }
   data,
   .author,
-  .coment {
+  .comment {
     font-family: Work Sans;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 15px;
-    text-align: left;
     color: var(--colorGreyTwo);
   }
   .title {
@@ -646,7 +631,6 @@ a {
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: left;
   }
   .text {
     padding-top: 18px;
@@ -654,15 +638,12 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: left;
     margin: 0;
-    text-align: left;
     color: var(--colorGreyTwo);
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
   }
   .img-container {
     width: 100%;
@@ -677,7 +658,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     padding: 13px 22px;
     color: var(--colorVeryWhite);
     border-radius: 5px;
@@ -698,7 +678,6 @@ a {
     font-weight: 400;
     line-height: 25px;
     color: var(--colorGreyTwo);
-    text-align: left;
   }
   .last-test {
     box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
@@ -710,7 +689,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .last-test__items {
@@ -747,7 +725,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     padding-bottom: 20px;
   }
   .categories__list {
@@ -760,19 +737,18 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGreyTwo);
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .item__count {
     border: 1px solid var(--colorGreyTwo);
     padding: 7px;
     font-family: Work Sans;
-    font-size: 12.8px;
+    font-size: 13px;
     font-weight: 500;
-    line-height: 15.82px;
-    text-align: left;
+    line-height: 15px;
   }
   .tags {
     padding: 40px 18px;
@@ -783,7 +759,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     padding-bottom: 30px;
   }
   .btn-tags {
@@ -793,7 +768,6 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    text-align: left;
     padding: 4px 12px;
     text-wrap: nowrap;
     color: var(--colorGreyTwo);
@@ -823,10 +797,6 @@ a {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
-  }
-  a {
-    all: unset;
   }
   .pagination-btn:hover {
     cursor: pointer;

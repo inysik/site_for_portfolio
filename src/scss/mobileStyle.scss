@@ -4,18 +4,7 @@
 
 @media (max-width: 480px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-      }
-    
-      a,
-      li {
-        all: unset;
-      }
-      body {
+     body {
         background-color: var(--colorWhite);
       }
     
@@ -71,7 +60,6 @@
         height: 50px;
         width: 100%;
         @include flex(space-between,center);
-        
         box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
       }
     
@@ -123,10 +111,7 @@
         text-align: center;
         color: var(--colorGrey);
         padding-top: 15px;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4;
+        @include maxLines(4);
         }
     
         .banner-paragraph {
@@ -135,16 +120,13 @@
           text-align: center;
           }
     
-      .banner-paragraph,.aboutUs__paragraph {
+      .banner-paragraph,.about-us__paragraph {
     
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
+       @include maxLines(3);
       
       }
     
-      .conteiner {
+      .container {
         padding-top: 50px;
         display: flex;
         flex-direction: column-reverse;
@@ -160,7 +142,7 @@
         flex-direction: column;
         padding-top: 73px;
         padding-bottom: 73px;
-        // width: 34, 5%;
+        
       }
     
       .image-content {
@@ -178,7 +160,6 @@
         font-size: $fontSizeXXS;
         font-weight: $fontWeight400;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorGrey);
       }
     
@@ -199,7 +180,7 @@
       }
     
       .cards-section {
-        // margin-top: 150px;
+        
         @include flex(center, center);
         flex-direction: column-reverse;
         gap: 10px;
@@ -277,13 +258,13 @@
         margin-bottom: 80px;
       }
     
-      .our-expereince {
+      .our-experince {
         background-color: var(--colorOrange);
         padding-top: 60px;
         padding-bottom: 60px;
       }
     
-      .our-expereince__cards {
+      .our-experince__cards {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -309,7 +290,6 @@
         font-size: $fontSizeXL;
         font-weight: $fontWeight700;
         line-height: $lineHeigthXL;
-        text-align: left;
         color: var(--colorBlack);
     
       }
@@ -330,8 +310,7 @@
         padding-right: 3%;
         overflow-y: auto;
         max-width: 100%;
-        
-          scrollbar-width: none; /* Убираем стандартную полосу прокрутки */
+        scrollbar-width: none;
       
     
         &_card {
@@ -394,7 +373,6 @@
         font-size: $fontSizeXS;
         font-weight: $fontWeight500;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorGrey);
         text-wrap: nowrap;
 
@@ -407,20 +385,17 @@
         font-size: $fontSizeXS;
         font-weight: $fontWeight500;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorRed);
       }
     
       .clients-feedback,
       .our-blog,
       .contact-us {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex;
         flex-direction: column;
         background-color: var(--colorWhite);
       }
-      .feedback-conteiner{
+      .feedback-container{
         padding-left:3% ;
         padding-right:3% ;
         width: 100%;
@@ -463,17 +438,15 @@
         font-size: $fontSizeS;
         font-weight: $fontWeight500;
         line-height: $lineHeigthS;
-        text-align: start;
         color: var(--colorVeryWhite);
       }
     
-      .profesional {
+      .profession {
         padding-bottom: 25px;
         font-family: $fontText;
         font-size: $fontSizeXXS;
         font-weight: $fontWeight400;
         line-height: $lineHeigthXS;
-        text-align: start;
         color: var(--colorVeryWhite);
       }
     
@@ -482,12 +455,8 @@
         font-size: $fontSizeXXS;
         font-weight: $fontWeight400;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorVeryWhite);
-         overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
+       @include maxLines(3);
         padding-right: 3%;
       }
     
@@ -543,8 +512,7 @@
      
     
       .slide__card {
-        // display: grid;
-        // grid-template-columns: repeat(1,2fr);
+       
         background-color: var(--colorWhiteOne);
         box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
         padding: 18px;
@@ -556,12 +524,11 @@
         width:67%;
       }
     
-      .profesional {
+      .profession {
         font-family: $fontText;
         font-size: $fontSizeXXS;
         font-weight: $fontWeight400;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorRed);
       }
     
@@ -570,26 +537,22 @@
         font-size: $fontSizeXS;
         font-weight: $fontWeight500;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorBlack);
       }
     
       .card__author {
-        display: flex;
-        justify-content: start;
-        align-items: center;
+        @include flex(start);
         gap: 10px;
         padding-top: 29px;
         color: var(--colorGreyTwo);
         font-family: $fontText;
       }
     
-      .author-famili {
+      .author-name {
         font-family: $fontText;
         font-size: $fontSizeS;
         font-weight: $fontWeight500;
         line-height: $lineHeigthS;
-        text-align: left;
         color: var(--colorBlack);
       }
     
@@ -598,7 +561,6 @@
         font-size: $fontSizeXXS;
         font-weight: $fontWeight400;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorGreyTwo);
       }
     
@@ -647,7 +609,7 @@
         font-size: $fontSizeS;
         font-weight: $fontWeight500;
         line-height: $lineHeigthM;
-        text-align: left;
+
       }
     
       .text-grey {
@@ -655,7 +617,6 @@
         font-size: $fontSizeXS;
         font-weight: $fontWeight500;
         line-height: $lineHeigthXS;
-        text-align: left;
         color: var(--colorGrey);
       }
     
@@ -711,8 +672,7 @@
       }
     
       .logos {
-        display: flex;
-        justify-content: space-between;
+       @include flex(space-between);
         gap: 29px;
         margin-bottom: 50px;
       }
@@ -743,7 +703,6 @@
         font-size: $fontSizeXXS;
         font-weight: $fontWeight600;
         line-height: $lineHeigthXS;
-        text-align: left;
       }
     
       .footer-column {
@@ -758,17 +717,12 @@
      
     
       .text-white {
-        color: var
-        (--colorVeryWhite);
+        color: var(--colorVeryWhite);
         font-family: $fontText;
         font-size: $fontSizeXXS;
         font-weight: $fontWeight400;
         line-height: $lineHeigthXS;
-        text-align: left;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
+       @include maxLines(3);
         
     }
     

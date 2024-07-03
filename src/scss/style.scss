@@ -2,17 +2,6 @@
 @import './bodyToggle';
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a,
-li {
-    all: unset;
-
-}
 body{
     background-color: var(--colorWhite);
 }
@@ -24,7 +13,7 @@ a:focus {
 }
 
 .icons__logos a:focus {
-    border: 2px solid black;
+    border: 2px solid black;// такое ощущение, что это есть на других страницах, предложение то же, вынести все в отдельный файл и подключать там его
 }
 
 .button {
@@ -48,6 +37,8 @@ a:focus {
     @include button-reset;
 }
 
+
+// тоже самое создать отдельный файл и вынести туда
 .red {
     color: var(--colorRed) ;
 }
@@ -73,6 +64,7 @@ a:focus {
     box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
 
 }
+
 
 .line-menu {
     display: none;
@@ -137,7 +129,7 @@ a:focus {
     margin-bottom: 50px;
 }
 
-.conteiner {
+.container {
     @include flex(center, center);
     gap: 38px;
 
@@ -148,6 +140,7 @@ a:focus {
     flex-direction: column;
     padding-top: 134px;
     padding-bottom: 134px;
+    // это что то новое, как оно работает?
     width: 34, 5%;
 }
 
@@ -202,6 +195,7 @@ a:focus {
     color:  var(--colorGrey);
 }
 
+// такое видел и в других файлах, предложение то же, вынести в отдельный файл и импортить его
 .position {
     &__title {
         padding-bottom: 25px;
@@ -236,6 +230,7 @@ a:focus {
 
 .round-btn {
     @include button-reset;
+    // лучше делать padding, так как если внутри кнопки текста будет больше, то будет выглядеть странно
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -272,19 +267,19 @@ a:focus {
 
 .greys {
     background-color:  var(--colorGreyTwo);
-    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4); // Где=то уже такое видел, вынести можно в отдельный файл
 
 }
 
 .blues {
     background-color:  var(--colorBlues);
-    box-shadow: 4px 5px 15px 0px rgba(0, 194, 255, 0.4);
+    box-shadow: 4px 5px 15px 0px rgba(0, 194, 255, 0.4); // и тут 
 
 }
 
 .blacks {
     background-color:  var(--colorBlackBtn);
-    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4); // и тут
 
 }
 .about-us{
@@ -296,13 +291,14 @@ a:focus {
     margin-bottom: 120px;
 }
 
-.our-expereince {
+.our-experince {
     background-color:  var(--colorOrange);
     padding-top: 50px;
     padding-bottom: 50px;
+   
 }
 
-.our-expereince__cards {
+.our-experince__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -414,6 +410,7 @@ a:focus {
 .our-blog,
 .contact-us {
 
+    // mixin
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,6 +441,7 @@ a:focus {
 
 }
 
+// author-name или author-fullname
 .name-famili {
     padding-top: 34px;
     padding-bottom: 7px;
@@ -451,11 +449,12 @@ a:focus {
     font-size: $fontSizeS;
     font-weight: $fontWeight500;
     line-height: $lineHeigthS;
+    // значение по умолчанию
     text-align: start;
     color: var(--colorVeryWhite);
 }
 
-.profesional {
+.profession {
     padding-bottom: 25px;
     font-family: $fontText;
     font-size: $fontSizeXXS;
@@ -502,6 +501,7 @@ a:focus {
 }
 
 .our-blog-wrapper {
+    // mixin
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,6 +513,7 @@ a:focus {
 }
 
 .slide__card {
+    // mixin
     display: flex;
     background-color: var(--colorWhiteOne);
     box-shadow: 0px 1px 10px 0px var(--colorBorderBlack);
@@ -526,7 +527,7 @@ a:focus {
     flex-direction: column;
 }
 
-.profesional {
+.profession {
     font-family: $fontText;
     font-size: $fontSizeXXS;
     font-weight: $fontWeight400;
@@ -556,7 +557,7 @@ a:focus {
 
 }
 
-.author-famili {
+.author-name {
     font-family: $fontText;
     font-size: $fontSizeS;
     font-weight: $fontWeight500;

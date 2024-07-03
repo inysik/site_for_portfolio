@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Jost&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@1,300;1,400&family=Roboto:ital,wght@0,100;1,300&family=Seymour+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, li {
+  all: unset;
+}
+
+body {
+  --buttonColor: rgba(255, 83, 0, 0.9);
+  --colorRed: rgba(255, 83, 0, 1);
+  --colorBlack: rgb(0, 0, 0);
+  --colorWhite: rgb(255, 255, 255);
+  --colorWhiteOne: rgb(255, 255, 255);
+  --colorOrange: rgba(255, 247, 244, 1);
+  --colorGrey: rgba(123, 123, 123, 1);
+  --colorBlues: rgba(0, 172, 255, 1);
+  --colorBlackBtn: rgba(55, 55, 55, 1);
+  --colorBorderRed: rgba(255, 83, 0, 0.4);
+  --colorBorderBlack: rgba(0, 0, 0, 0.1);
+  --colorGreyTwo: rgba(123, 123, 123, 1);
+  --bugroundFooter: rgba(55, 55, 55, 1);
+  --colorVeryWhite: rgb(255, 255, 255);
+  --colorShadowBlue: rgba(0, 194, 255, 0.4);
+  --colorShadowBlack: rgba(0, 0, 0, 0.4);
+  --colorShadowGrey: rgba(0, 0, 0, 0.4);
+}
+body.dark-theme {
+  --colorBlack: rgb(255, 255, 255);
+  --colorVeryWhite: rgb(255, 255, 255);
+  --colorWhite: rgb(0, 0, 0);
+  --colorWhiteOne: rgba(36, 37, 38, 1);
+  --colorOrange: rgba(36, 37, 38, 1);
+  --colorGrey: rgba(255, 255, 255, 1);
+  --colorGreyTwo: rgba(123, 123, 123, 1);
+  --bugroundFooter: rgba(55, 55, 55, 1);
+}
+
+.micro-articales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.states {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  position: relative;
+  height: auto;
+}
+
+.img-articales {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.img-top {
+  margin-top: 50px;
+}
+
+.p {
+  margin-top: 45px;
+}
+
+.auther {
+  margin-top: 60px;
+  background-color: var(--colorOrange);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.auther-name {
+  margin-top: 18px;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.auther-profession {
+  margin-top: 12px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--colorRed);
+}
+
+.comments {
+  margin-top: 120px;
+}
+
+.menu {
+  font-family: Work Sans;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenu {
+  margin-top: 18px;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--colorGreyTwo);
+}
+
+#text-input-comment {
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+}
+
+.container-comment {
+  margin-top: 40px;
+}
+
+.comment-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.content-card {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.sub-comment {
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-text-comment {
+  margin-top: 15px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--colorGreyTwo);
+}
+
+.card-auther {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: var(--colorRed);
+}
+
+.pair {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}

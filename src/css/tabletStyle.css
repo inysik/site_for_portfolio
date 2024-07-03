@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Jost&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@1,300;1,400&family=Roboto:ital,wght@0,100;1,300&family=Seymour+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, li {
+  all: unset;
+}
+
 body {
   --buttonColor: rgba(255, 83, 0, 0.9);
   --colorRed: rgba(255, 83, 0, 1);
@@ -14,6 +24,9 @@ body {
   --colorGreyTwo: rgba(123, 123, 123, 1);
   --bugroundFooter: rgba(55, 55, 55, 1);
   --colorVeryWhite: rgb(255, 255, 255);
+  --colorShadowBlue: rgba(0, 194, 255, 0.4);
+  --colorShadowBlack: rgba(0, 0, 0, 0.4);
+  --colorShadowGrey: rgba(0, 0, 0, 0.4);
 }
 body.dark-theme {
   --colorBlack: rgb(255, 255, 255);
@@ -27,24 +40,14 @@ body.dark-theme {
 }
 
 @media (max-width: 768px) and (min-width: 376px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  a,
-  li {
-    all: unset;
-  }
   body {
     background-color: var(--colorWhite);
   }
   a:focus {
-    content: "";
     color: var(--colorRed);
   }
   .icons__logos a:focus {
-    border: 2px solid black;
+    border: 2px solid var(--colorBlack);
   }
   .button {
     border: none;
@@ -122,7 +125,6 @@ body.dark-theme {
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: left;
   }
   .heading__title-banner {
     font-size: 40px;
@@ -135,7 +137,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGrey);
     padding-top: 15px;
     overflow: hidden;
@@ -147,13 +148,13 @@ body.dark-theme {
     margin-top: 10px;
     margin-bottom: 50px;
   }
-  .banner-paragraph, .aboutUs__paragraph {
+  .banner-paragraph, .about-us__paragraph {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
   }
-  .conteiner {
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +208,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGrey);
   }
   .position__title {
@@ -278,15 +278,15 @@ body.dark-theme {
   }
   .greys {
     background-color: var(--colorGreyTwo);
-    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 5px 15px 0px var(--colorShadowGrey);
   }
   .blues {
     background-color: var(--colorBlues);
-    box-shadow: 4px 5px 15px 0px rgba(0, 194, 255, 0.4);
+    box-shadow: 4px 5px 15px 0px var(--colorShadowBlue);
   }
   .blacks {
     background-color: var(--colorBlackBtn);
-    box-shadow: 4px 5px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 5px 15px 0px var(--colorShadowBlack);
   }
   .about-us {
     background-color: var(--colorWhite);
@@ -295,12 +295,12 @@ body.dark-theme {
     margin-top: 1px;
     margin-bottom: 80px;
   }
-  .our-expereince {
+  .our-experince {
     background-color: var(--colorOrange);
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .our-expereince__cards {
+  .our-experince__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
@@ -326,7 +326,6 @@ body.dark-theme {
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .team-member {
@@ -366,8 +365,9 @@ body.dark-theme {
   }
   .our-work {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 120px;
     background-color: var(--colorWhite);
   }
@@ -396,7 +396,6 @@ body.dark-theme {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGrey);
   }
   .menu__btn_active {
@@ -410,7 +409,6 @@ body.dark-theme {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorRed);
   }
   .clients-feedback,
@@ -422,7 +420,7 @@ body.dark-theme {
     flex-direction: column;
     background-color: var(--colorWhite);
   }
-  .feedback-conteiner {
+  .feedback-container {
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -442,7 +440,7 @@ body.dark-theme {
     background-color: var(--colorRed);
     color: var(--colorWhite);
     padding-left: 5%;
-    padding-right: 5px;
+    padding-right: 5%;
     position: relative;
   }
   .name-famili {
@@ -452,16 +450,14 @@ body.dark-theme {
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: start;
     color: var(--colorVeryWhite);
   }
-  .profesional {
+  .profession {
     padding-bottom: 25px;
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: start;
     color: var(--colorVeryWhite);
   }
   .card-text {
@@ -469,13 +465,12 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorVeryWhite);
+    padding-right: 3%;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    padding-right: 3%;
   }
   .img-card {
     width: 50px;
@@ -531,12 +526,11 @@ body.dark-theme {
     flex-direction: column;
     width: 67%;
   }
-  .profesional {
+  .profession {
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorRed);
   }
   .other-card {
@@ -544,7 +538,6 @@ body.dark-theme {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .card__author {
@@ -556,12 +549,11 @@ body.dark-theme {
     color: var(--colorGreyTwo);
     font-family: Work Sans;
   }
-  .author-famili {
+  .author-name {
     font-family: Work Sans;
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .date {
@@ -569,7 +561,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGreyTwo);
   }
   .contact-cards {
@@ -612,14 +603,12 @@ body.dark-theme {
     font-size: 25px;
     font-weight: 500;
     line-height: 40px;
-    text-align: left;
   }
   .text-grey {
     font-family: Work Sans;
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGrey);
   }
   .form {
@@ -631,7 +620,6 @@ body.dark-theme {
     font-size: 30px;
     font-weight: 600;
     line-height: 40px;
-    text-align: left;
   }
   .client-form {
     padding-top: 18px;
@@ -667,6 +655,7 @@ body.dark-theme {
   .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 50px;
     margin-bottom: 120px;
   }
@@ -694,7 +683,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 600;
     line-height: 25px;
-    text-align: left;
   }
   .footer-column {
     display: flex;
@@ -705,12 +693,11 @@ body.dark-theme {
     color: rgb(255, 255, 255);
   }
   .text-white {
-    color: var --colorVeryWhite;
+    color: var(--colorVeryWhite);
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;

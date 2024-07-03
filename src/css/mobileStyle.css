@@ -1,5 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display&family=Jost&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@1,300;1,400&family=Roboto:ital,wght@0,100;1,300&family=Seymour+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, li {
+  all: unset;
+}
+
 body {
   --buttonColor: rgba(255, 83, 0, 0.9);
   --colorRed: rgba(255, 83, 0, 1);
@@ -15,6 +25,9 @@ body {
   --colorGreyTwo: rgba(123, 123, 123, 1);
   --bugroundFooter: rgba(55, 55, 55, 1);
   --colorVeryWhite: rgb(255, 255, 255);
+  --colorShadowBlue: rgba(0, 194, 255, 0.4);
+  --colorShadowBlack: rgba(0, 0, 0, 0.4);
+  --colorShadowGrey: rgba(0, 0, 0, 0.4);
 }
 body.dark-theme {
   --colorBlack: rgb(255, 255, 255);
@@ -28,15 +41,6 @@ body.dark-theme {
 }
 
 @media (max-width: 480px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  a,
-  li {
-    all: unset;
-  }
   body {
     background-color: var(--colorWhite);
   }
@@ -143,13 +147,13 @@ body.dark-theme {
     margin-bottom: 50px;
     text-align: center;
   }
-  .banner-paragraph, .aboutUs__paragraph {
+  .banner-paragraph, .about-us__paragraph {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
   }
-  .conteiner {
+  .container {
     padding-top: 50px;
     display: flex;
     flex-direction: column-reverse;
@@ -179,7 +183,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGrey);
   }
   .position__title {
@@ -268,12 +271,12 @@ body.dark-theme {
     margin-top: 1px;
     margin-bottom: 80px;
   }
-  .our-expereince {
+  .our-experince {
     background-color: var(--colorOrange);
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .our-expereince__cards {
+  .our-experince__cards {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -296,7 +299,6 @@ body.dark-theme {
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .team-member {
@@ -316,7 +318,7 @@ body.dark-theme {
     padding-right: 3%;
     overflow-y: auto;
     max-width: 100%;
-    scrollbar-width: none; /* Убираем стандартную полосу прокрутки */
+    scrollbar-width: none;
   }
   .team-cards_card {
     width: auto;
@@ -373,7 +375,6 @@ body.dark-theme {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGrey);
     text-wrap: nowrap;
   }
@@ -388,7 +389,6 @@ body.dark-theme {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorRed);
   }
   .clients-feedback,
@@ -400,7 +400,7 @@ body.dark-theme {
     flex-direction: column;
     background-color: var(--colorWhite);
   }
-  .feedback-conteiner {
+  .feedback-container {
     padding-left: 3%;
     padding-right: 3%;
     width: 100%;
@@ -436,16 +436,14 @@ body.dark-theme {
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: start;
     color: var(--colorVeryWhite);
   }
-  .profesional {
+  .profession {
     padding-bottom: 25px;
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: start;
     color: var(--colorVeryWhite);
   }
   .card-text {
@@ -453,7 +451,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorVeryWhite);
     overflow: hidden;
     display: -webkit-box;
@@ -516,12 +513,11 @@ body.dark-theme {
     flex-direction: column;
     width: 67%;
   }
-  .profesional {
+  .profession {
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorRed);
   }
   .other-card {
@@ -529,7 +525,6 @@ body.dark-theme {
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .card__author {
@@ -541,12 +536,11 @@ body.dark-theme {
     color: var(--colorGreyTwo);
     font-family: Work Sans;
   }
-  .author-famili {
+  .author-name {
     font-family: Work Sans;
     font-size: 25px;
     font-weight: 500;
     line-height: 30px;
-    text-align: left;
     color: var(--colorBlack);
   }
   .date {
@@ -554,7 +548,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGreyTwo);
   }
   .contact-cards {
@@ -597,14 +590,12 @@ body.dark-theme {
     font-size: 25px;
     font-weight: 500;
     line-height: 40px;
-    text-align: left;
   }
   .text-grey {
     font-family: Work Sans;
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
-    text-align: left;
     color: var(--colorGrey);
   }
   .form {
@@ -654,6 +645,7 @@ body.dark-theme {
   .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 29px;
     margin-bottom: 50px;
   }
@@ -681,7 +673,6 @@ body.dark-theme {
     font-size: 16px;
     font-weight: 600;
     line-height: 25px;
-    text-align: left;
   }
   .footer-column {
     display: flex;
@@ -692,12 +683,11 @@ body.dark-theme {
     color: rgb(255, 255, 255);
   }
   .text-white {
-    color: var --colorVeryWhite;
+    color: var(--colorVeryWhite);
     font-family: Work Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    text-align: left;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
