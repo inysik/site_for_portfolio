@@ -7,52 +7,57 @@
     <title>Global Inform</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline';">
+    <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+  font-src 'self' https://fonts.gstatic.com;
+">
 
 </head>
 
 <body class="light-theme">
     <header class="navigation center">
 
-        <h2 class="logo"><span class="red">Digi</span>
+        <a href="index.html" class="logo"><span class="red">Digi</span>
             <span class="black">ency</span>
-        </h2>
-        <ul class="menu-list">
-            <li class="menu-list_item"><a href="/">Home</a></li>
-            <li class="menu-list_item"> <a href="./AboutUs">About Us</a></li>
-            <li class="menu-list_item"><a href="./src/our-blog/OurBlog.html">Our Blog</a></li>
-            <li class="menu-list_item"><a href="./Clients">Clients</a></li>
-            <li class="menu-list_item"><a href="./OurBlog">Our Works</a></li>
-            <li class="menu-list_item"><a href="./ContactUs">Contact Us</a></li>
-        </ul>
-        <button id="themeToggle" class="toggle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none">
-                <g>
-                    <path id="Mask" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 6C12.552 6 13 5.553 13 5V3C13 2.447 12.552 2 12 2C11.448 2 11 2.447 11 3V5C11 5.553 11.448 6 12 6ZM12 14C10.897 14 10 13.103 10 12C10 10.897 10.897 10 12 10C13.103 10 14 10.897 14 12C14 13.103 13.103 14 12 14ZM12 8C9.794 8 8 9.794 8 12C8 14.206 9.794 16 12 16C14.206 16 16 14.206 16 12C16 9.794 14.206 8 12 8ZM19 11H21C21.552 11 22 11.447 22 12C22 12.553 21.552 13 21 13H19C18.448 13 18 12.553 18 12C18 11.447 18.448 11 19 11ZM6 12C6 11.447 5.552 11 5 11H3C2.448 11 2 11.447 2 12C2 12.553 2.448 13 3 13H5C5.552 13 6 12.553 6 12ZM4.8067 5.0533C5.1907 4.6573 5.8237 4.6453 6.2207 5.0283L7.6597 6.4183C8.0567 6.8013 8.0677 7.4353 7.6837 7.8323C7.4877 8.0353 7.2267 8.1373 6.9647 8.1373C6.7147 8.1373 6.4647 8.0453 6.2697 7.8573L4.8307 6.4673C4.4337 6.0843 4.4227 5.4503 4.8067 5.0533ZM17.0352 8.1377C17.2852 8.1377 17.5352 8.0447 17.7302 7.8577L19.1692 6.4677C19.5662 6.0837 19.5772 5.4497 19.1932 5.0537C18.8102 4.6577 18.1782 4.6457 17.7792 5.0287L16.3402 6.4177C15.9432 6.8017 15.9322 7.4357 16.3162 7.8317C16.5122 8.0347 16.7732 8.1377 17.0352 8.1377ZM11 19C11 18.447 11.448 18 12 18C12.552 18 13 18.447 13 19V21C13 21.553 12.552 22 12 22C11.448 22 11 21.553 11 21V19ZM17.73 16.1426C17.333 15.7596 16.7 15.7716 16.316 16.1676C15.932 16.5646 15.943 17.1986 16.34 17.5816L17.779 18.9716C17.974 19.1596 18.224 19.2516 18.474 19.2516C18.736 19.2516 18.997 19.1496 19.193 18.9466C19.577 18.5496 19.566 17.9156 19.169 17.5326L17.73 16.1426ZM4.831 17.5326L6.27 16.1426C6.668 15.7596 7.301 15.7716 7.684 16.1676C8.068 16.5646 8.057 17.1986 7.66 17.5816L6.221 18.9716C6.026 19.1596 5.776 19.2516 5.526 19.2516C5.264 19.2516 5.003 19.1496 4.807 18.9466C4.423 18.5496 4.434 17.9156 4.831 17.5326Z" />
-                    <mask id="mask0_197_2224" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2"
-                        width="20" height="20">
-                        <path id="Mask_2" fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12 6C12.552 6 13 5.553 13 5V3C13 2.447 12.552 2 12 2C11.448 2 11 2.447 11 3V5C11 5.553 11.448 6 12 6ZM12 14C10.897 14 10 13.103 10 12C10 10.897 10.897 10 12 10C13.103 10 14 10.897 14 12C14 13.103 13.103 14 12 14ZM12 8C9.794 8 8 9.794 8 12C8 14.206 9.794 16 12 16C14.206 16 16 14.206 16 12C16 9.794 14.206 8 12 8ZM19 11H21C21.552 11 22 11.447 22 12C22 12.553 21.552 13 21 13H19C18.448 13 18 12.553 18 12C18 11.447 18.448 11 19 11ZM6 12C6 11.447 5.552 11 5 11H3C2.448 11 2 11.447 2 12C2 12.553 2.448 13 3 13H5C5.552 13 6 12.553 6 12ZM4.8067 5.0533C5.1907 4.6573 5.8237 4.6453 6.2207 5.0283L7.6597 6.4183C8.0567 6.8013 8.0677 7.4353 7.6837 7.8323C7.4877 8.0353 7.2267 8.1373 6.9647 8.1373C6.7147 8.1373 6.4647 8.0453 6.2697 7.8573L4.8307 6.4673C4.4337 6.0843 4.4227 5.4503 4.8067 5.0533ZM17.0352 8.1377C17.2852 8.1377 17.5352 8.0447 17.7302 7.8577L19.1692 6.4677C19.5662 6.0837 19.5772 5.4497 19.1932 5.0537C18.8102 4.6577 18.1782 4.6457 17.7792 5.0287L16.3402 6.4177C15.9432 6.8017 15.9322 7.4357 16.3162 7.8317C16.5122 8.0347 16.7732 8.1377 17.0352 8.1377ZM11 19C11 18.447 11.448 18 12 18C12.552 18 13 18.447 13 19V21C13 21.553 12.552 22 12 22C11.448 22 11 21.553 11 21V19ZM17.73 16.1426C17.333 15.7596 16.7 15.7716 16.316 16.1676C15.932 16.5646 15.943 17.1986 16.34 17.5816L17.779 18.9716C17.974 19.1596 18.224 19.2516 18.474 19.2516C18.736 19.2516 18.997 19.1496 19.193 18.9466C19.577 18.5496 19.566 17.9156 19.169 17.5326L17.73 16.1426ZM4.831 17.5326L6.27 16.1426C6.668 15.7596 7.301 15.7716 7.684 16.1676C8.068 16.5646 8.057 17.1986 7.66 17.5816L6.221 18.9716C6.026 19.1596 5.776 19.2516 5.526 19.2516C5.264 19.2516 5.003 19.1496 4.807 18.9466C4.423 18.5496 4.434 17.9156 4.831 17.5326Z" />
-                    </mask>
-                    <g mask="url(#mask0_197_2224)">
+            <a>
+                <ul class="menu-list">
+                    <li class="menu-list_item"><a href="index.html">Home</a></li>
+                    <li class="menu-list_item"> <a href="#AboutUs">About Us</a></li>
+                    <li class="menu-list_item"><a href="./src/our-blog/OurBlog.html">Our Blog</a></li>
+                    <li class="menu-list_item"><a href="#Clients">Clients</a></li>
+                    <li class="menu-list_item"><a href="#OurBlog">Our Works</a></li>
+                    <li class="menu-list_item"><a href="#ContactUs">Contact Us</a></li>
+                </ul>
+                <button id="themeToggle" class="toggle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none">
                         <g>
-                            <rect id="Base" width="24" height="24" />
+                            <path id="Mask" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 6C12.552 6 13 5.553 13 5V3C13 2.447 12.552 2 12 2C11.448 2 11 2.447 11 3V5C11 5.553 11.448 6 12 6ZM12 14C10.897 14 10 13.103 10 12C10 10.897 10.897 10 12 10C13.103 10 14 10.897 14 12C14 13.103 13.103 14 12 14ZM12 8C9.794 8 8 9.794 8 12C8 14.206 9.794 16 12 16C14.206 16 16 14.206 16 12C16 9.794 14.206 8 12 8ZM19 11H21C21.552 11 22 11.447 22 12C22 12.553 21.552 13 21 13H19C18.448 13 18 12.553 18 12C18 11.447 18.448 11 19 11ZM6 12C6 11.447 5.552 11 5 11H3C2.448 11 2 11.447 2 12C2 12.553 2.448 13 3 13H5C5.552 13 6 12.553 6 12ZM4.8067 5.0533C5.1907 4.6573 5.8237 4.6453 6.2207 5.0283L7.6597 6.4183C8.0567 6.8013 8.0677 7.4353 7.6837 7.8323C7.4877 8.0353 7.2267 8.1373 6.9647 8.1373C6.7147 8.1373 6.4647 8.0453 6.2697 7.8573L4.8307 6.4673C4.4337 6.0843 4.4227 5.4503 4.8067 5.0533ZM17.0352 8.1377C17.2852 8.1377 17.5352 8.0447 17.7302 7.8577L19.1692 6.4677C19.5662 6.0837 19.5772 5.4497 19.1932 5.0537C18.8102 4.6577 18.1782 4.6457 17.7792 5.0287L16.3402 6.4177C15.9432 6.8017 15.9322 7.4357 16.3162 7.8317C16.5122 8.0347 16.7732 8.1377 17.0352 8.1377ZM11 19C11 18.447 11.448 18 12 18C12.552 18 13 18.447 13 19V21C13 21.553 12.552 22 12 22C11.448 22 11 21.553 11 21V19ZM17.73 16.1426C17.333 15.7596 16.7 15.7716 16.316 16.1676C15.932 16.5646 15.943 17.1986 16.34 17.5816L17.779 18.9716C17.974 19.1596 18.224 19.2516 18.474 19.2516C18.736 19.2516 18.997 19.1496 19.193 18.9466C19.577 18.5496 19.566 17.9156 19.169 17.5326L17.73 16.1426ZM4.831 17.5326L6.27 16.1426C6.668 15.7596 7.301 15.7716 7.684 16.1676C8.068 16.5646 8.057 17.1986 7.66 17.5816L6.221 18.9716C6.026 19.1596 5.776 19.2516 5.526 19.2516C5.264 19.2516 5.003 19.1496 4.807 18.9466C4.423 18.5496 4.434 17.9156 4.831 17.5326Z" />
+                            <mask id="mask0_197_2224" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2"
+                                width="20" height="20">
+                                <path id="Mask_2" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 6C12.552 6 13 5.553 13 5V3C13 2.447 12.552 2 12 2C11.448 2 11 2.447 11 3V5C11 5.553 11.448 6 12 6ZM12 14C10.897 14 10 13.103 10 12C10 10.897 10.897 10 12 10C13.103 10 14 10.897 14 12C14 13.103 13.103 14 12 14ZM12 8C9.794 8 8 9.794 8 12C8 14.206 9.794 16 12 16C14.206 16 16 14.206 16 12C16 9.794 14.206 8 12 8ZM19 11H21C21.552 11 22 11.447 22 12C22 12.553 21.552 13 21 13H19C18.448 13 18 12.553 18 12C18 11.447 18.448 11 19 11ZM6 12C6 11.447 5.552 11 5 11H3C2.448 11 2 11.447 2 12C2 12.553 2.448 13 3 13H5C5.552 13 6 12.553 6 12ZM4.8067 5.0533C5.1907 4.6573 5.8237 4.6453 6.2207 5.0283L7.6597 6.4183C8.0567 6.8013 8.0677 7.4353 7.6837 7.8323C7.4877 8.0353 7.2267 8.1373 6.9647 8.1373C6.7147 8.1373 6.4647 8.0453 6.2697 7.8573L4.8307 6.4673C4.4337 6.0843 4.4227 5.4503 4.8067 5.0533ZM17.0352 8.1377C17.2852 8.1377 17.5352 8.0447 17.7302 7.8577L19.1692 6.4677C19.5662 6.0837 19.5772 5.4497 19.1932 5.0537C18.8102 4.6577 18.1782 4.6457 17.7792 5.0287L16.3402 6.4177C15.9432 6.8017 15.9322 7.4357 16.3162 7.8317C16.5122 8.0347 16.7732 8.1377 17.0352 8.1377ZM11 19C11 18.447 11.448 18 12 18C12.552 18 13 18.447 13 19V21C13 21.553 12.552 22 12 22C11.448 22 11 21.553 11 21V19ZM17.73 16.1426C17.333 15.7596 16.7 15.7716 16.316 16.1676C15.932 16.5646 15.943 17.1986 16.34 17.5816L17.779 18.9716C17.974 19.1596 18.224 19.2516 18.474 19.2516C18.736 19.2516 18.997 19.1496 19.193 18.9466C19.577 18.5496 19.566 17.9156 19.169 17.5326L17.73 16.1426ZM4.831 17.5326L6.27 16.1426C6.668 15.7596 7.301 15.7716 7.684 16.1676C8.068 16.5646 8.057 17.1986 7.66 17.5816L6.221 18.9716C6.026 19.1596 5.776 19.2516 5.526 19.2516C5.264 19.2516 5.003 19.1496 4.807 18.9466C4.423 18.5496 4.434 17.9156 4.831 17.5326Z" />
+                            </mask>
+                            <g mask="url(#mask0_197_2224)">
+                                <g>
+                                    <rect id="Base" width="24" height="24" />
+                                </g>
+                            </g>
                         </g>
-                    </g>
-                </g>
-            </svg></button>
+                    </svg></button>
 
-        <button class="line-menu"><svg class="menu-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24">
-                <g clip-path="url(#clip0_65_221)">
-                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_65_221">
-                        <rect width="24" height="24" />
-                    </clipPath>
-                </defs>
-            </svg></button>
+                <button class="line-menu"><svg class="menu-btn" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <g clip-path="url(#clip0_65_221)">
+                            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_65_221">
+                                <rect width="24" height="24" />
+                            </clipPath>
+                        </defs>
+                    </svg></button>
     </header>
     <section class="banner">
 
@@ -63,9 +68,9 @@
                 <p class="paragraph banner-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                     amet sint. Velit
                     officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <button class="button">Contact Us</button>
+                <a href="#ContactUs" class="button">Contact Us</a>
             </div>
-            <img loading="lazy" class="image-content" src="./img/bannerImage.png" alt="">
+            <img class="image-content" src="./img/bannerImage.png" alt="banner">
             <ul class="icons">
                 <li class="icons__logos_active">
                     <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F">
@@ -125,10 +130,10 @@
 
 
     </section>
-    <section class="about-us center">
+    <section class="about-us center" id="AboutUs">
 
         <div class="container">
-            <img loading="lazy" class="image-content" src="./img/aboutUsImage.png" alt="">
+            <!-- <img class="image-content" src="./img/aboutUsImage.png" alt="images about us"> -->
             <div class="content">
                 <span class="title-section position__title">About Us</span>
                 <h2 class="heading position__heading"><span class="black">We Are</span>
@@ -141,13 +146,13 @@
                 <p class="paragraph about-us__paragraph">Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit
                     faucibus est, dui
                     interdum ut amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.</p>
-                
-                <button class="button position__btn">Contact Us</button>
+
+                <a href="#ContactUs" class="button position__btn">Contact Us</a>
             </div>
         </div>
         <section class="cards-section">
             <article class="card">
-              
+
                 <button class="round-btn reds"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                         viewBox="0 0 30 30" fill="none">
                         <g clip-path="url(#clip0_141_575)">
@@ -164,7 +169,7 @@
                 <p class="black text">World leader in consulting and finance</p>
             </article>
             <article class="card">
-               
+
                 <button class="round-btn greys"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                         viewBox="0 0 30 30" fill="none">
                         <g clip-path="url(#clip0_141_577)">
@@ -181,7 +186,7 @@
                 <p class="black text">A focused team with a specialized skill</p>
             </article>
             <article class="card">
-              
+
                 <button class="round-btn blues"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                         viewBox="0 0 30 30" fill="none">
                         <g clip-path="url(#clip0_141_579)">
@@ -198,7 +203,7 @@
                 <p class="black text">Trusted and professional advisors for you</p>
             </article>
             <article class="card">
-                
+
                 <button class="round-btn blacks"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none">
                         <path
@@ -225,11 +230,11 @@
                     augue praesent. Lorem vulputate orci eget mi, sed pulvinar.</p>
                 <p class="paragraph">Ornare etiam erat volutpat tempor fringilla mi. Elit a blandit faucibus est, dui
                     interdum ut amet. Adipiscing feugiat vel at posuere in. Pellentesque volutpat vestibulum.</p>
-                <button class="button position__btn">Contact Us</button>
+                <a href="#ContactUs" class="button position__btn">Contact Us</a>
             </div>
             <section class="our-experince__cards">
                 <article class="cards">
-                  
+
                     <h2 class="card-name-number">250+</h2><span class="black text-num">Global Customer</span>
                 </article>
                 <article class="cards">
@@ -245,7 +250,7 @@
         </div>
     </section>
     <section class="team-member center">
-      
+
         <span class="title-section position__title">Team Member</span>
         <h2 class="heading position__heding">
             <p class="black">We Have </p>
@@ -254,30 +259,30 @@
         </h2>
         <section class="team-cards">
             <article class="team-cards__card">
-                <img class="img-member" loading="lazy" src="./img/teamMember1Image.jpg" alt="">
-        
+                <img class="img-member" loading="lazy" src="./img/teamMember1Image.jpg" alt="memder number one">
+
                 <p class="text fio">Gustavo Herwitz</p>
                 <p class="text">UI/UX Designer</p>
             </article>
             <article class="team-cards__card">
-                <img class="img-member" loading="lazy" src="./img/teamMember2Image.jpg" alt="">
+                <img class="img-member" loading="lazy" src="./img/teamMember2Image.jpg" alt="memder number two">
                 <p class="text fio">Phillip Curtis</p>
                 <p class="text">Graphic Designer</p>
             </article>
             <article class="team-cards__card">
-                <img class="img-member" loading="lazy" src="./img/teamMember3Image.jpg" alt="">
+                <img class="img-member" loading="lazy" src="./img/teamMember3Image.jpg" alt="memder number three">
                 <p class="text fio">Talan Torff</p>
                 <p class="text">Web Developer</p>
             </article>
             <article class="team-cards__card">
-                <img class="img-member" loading="lazy" src="./img/teamMember4Image.jpg" alt="">
+                <img class="img-member" loading="lazy" src="./img/teamMember4Image.jpg" alt="memder number four">
                 <p class="text fio">Abram Vaccaro</p>
                 <p class="text">App Developer</p>
             </article>
         </section>
     </section>
-    <section class="our-work center">
-        
+    <section class="our-work center" id="OurBlog">
+
         <p class="title-section position__title">Our Work</p>
         <h2 class="heading position__heading">
             <p class="black">We Have Some </p>
@@ -293,78 +298,112 @@
             </ul>
         </nav>
         <section class="works">
-          
+
             <div class="colums">
-            
+
                 <article class="works__item" id="1"><img class="img-slide" loading="lazy" src="./img/ourWork1Image.png"
-                        alt=""></article>
-                <article class="works__item" id="2"><img class="img-slide" src="./img/ourWork2Image.jpg" alt="">
+                        alt="work-menu-one"></article>
+                <article class="works__item" id="2"><img class="img-slide" src="./img/ourWork2Image.jpg"
+                        alt="work-menu-two">
                 </article>
             </div>
             <div class="colums">
                 <article class="works__item" id="3"><img class="img-slide" loading="lazy" src="./img/ourWork3Image.jpg"
-                        alt=""></article>
+                        alt="work-menu-three"></article>
                 <article class="works__item" id="4"><img class="img-slide" loading="lazy" src="./img/ourWork4Image.jpg"
-                        alt=""></article>
+                        alt="work-menu--four"></article>
             </div>
             <div class="colums">
                 <article class="works__item" id="5"> <img loading="lazy" class="img-slide" src="./img/ourWork5Image.jpg"
-                        alt=""></article>
+                        alt="work-menu-five"></article>
                 <article class="works__item" id="6"><img class="img-slide" loading="lazy" src="./img/ourWork6Image.jpg"
-                        alt=""></article>
+                        alt="work-menu-six"></article>
             </div>
         </section>
 
     </section>
-    <section class="clients-feedback center">
+    <section class="clients-feedback center" id="Clients">
         <p class="title-section position__title">Clients Feedback</p>
         <h2 class="heading position__heading">
-            <p class="black">Some </p>
-            <p class="red">Great Words</p>
-            <p class="black">From Our Clients</p>
+            <span class="black">Some </span>
+            <span class="red">Great Words</span>
+            <span class="black">From Our Clients</span>
         </h2>
 
         <div class="feedback-container">
             <div class="feedback-wrapper">
+
+                <!-- Слайд 1 -->
                 <div class="feedback-wrapper__slide">
                     <article class="card__client">
                         <h4 class="name-famili">Justin Septimus</h4>
-                        <h5 class="profession">CEO,word yt</h5>
+                        <h5 class="profession">CEO, word yt</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet
                             libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
                             adipiscing.</p>
-                        <img loading="lazy" class="img-card" src="./img/ClientProfile.png" alt="">
+                        <img loading="lazy" class="img-card" src="./img/ClientProfile.png" alt="images client">
                     </article>
+                </div>
+
+                <!-- Слайд 2 -->
+                <div class="feedback-wrapper__slide">
                     <article class="card__client">
                         <h4 class="name-famili">Ashlynn Gouse</h4>
                         <h5 class="profession">Managing Director</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet
                             libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
                             adipiscing.</p>
-                        <img loading="lazy" class="img-card" src="./img/client2Image.png" alt="">
+                        <img loading="lazy" class="img-card" src="./img/client2Image.png" alt="images client">
                     </article>
                 </div>
+                <div class="feedback-wrapper__slide">
+                    <article class="card__client">
+                        <h4 class="name-famili">Justin Septimus</h4>
+                        <h5 class="profession">CEO, word yt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet
+                            libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
+                            adipiscing.</p>
+                        <img loading="lazy" class="img-card" src="./img/ClientProfile.png" alt="images client">
+                    </article>
+                </div>
+                <div class="feedback-wrapper__slide">
+                    <article class="card__client">
+                        <h4 class="name-famili">Justin Septimus</h4>
+                        <h5 class="profession">CEO, word yt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet
+                            libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
+                            adipiscing.</p>
+                        <img loading="lazy" class="img-card" src="./img/ClientProfile.png" alt="images client">
+                    </article>
+                </div>
+                <div class="feedback-wrapper__slide">
+                    <article class="card__client">
+                        <h4 class="name-famili">Justin Septimus</h4>
+                        <h5 class="profession">CEO, word yt</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit a laoreet
+                            libero dis eget maecenas bibendum. Morbi lacinia eu, etiam volutpat morbi et amet, sagittis
+                            adipiscing.</p>
+                        <img loading="lazy" class="img-card" src="./img/ClientProfile.png" alt="images client">
+                    </article>
+                </div>
+                <!-- тут можно добавить ещё слайды -->
+
             </div>
         </div>
+
+        <!-- Пагинация -->
         <div class="pagination">
-            <div class="pagination__bullet">
-                <ul>
-                    <li> <button class="btn__pagination"><img loading="lazy" src="./img/pagination1.png"
-                                alt=""></button></li>
-                    <li> <button class="btn__pagination"><img loading="lazy" src="./img/pagination2.png"
-                                alt=""></button></li>
-                    <li> <button class="btn__pagination"><img loading="lazy" src="./img/pagination3.png"
-                                alt=""></button></li>
-
-
-
-                </ul>
-            </div>
+            <ul class="pagination__bullet">
+                <li><button class="btn__pagination"><img loading="lazy" src="./img/pagination1.png" alt=""></button>
+                </li>
+                <li><button class="btn__pagination"><img loading="lazy" src="./img/pagination2.png" alt=""></button>
+                </li>
+                <li><button class="btn__pagination"><img loading="lazy" src="./img/pagination3.png" alt=""></button>
+                </li>
+            </ul>
         </div>
-        </div>
-
-
     </section>
+
     <section class="our-blog center">
         <p class="title-section position__title">Our Blog</p>
         <h2 class="heading position__heading">
@@ -379,7 +418,7 @@
                         <h4 class="profession">Managing Director</h4>
                         <h3 class="other-card">Ridiculously powerful 2021 iPad Pro may drop this month</h3>
                         <div class="card__author">
-                            <img loading="lazy" src="./img/ourBlogProfile2.png" alt="">
+                            <img loading="lazy" src="./img/ourBlogProfile2.png" alt="blog profile">
                             <div class="card_blog">
 
                                 <h3 class="author-name">Haylie Mango</h3>
@@ -388,16 +427,16 @@
                             </div>
                         </div>
                     </div>
-                    <img class="img-slides" loading="lazy" src="./img/ourBlogBig2Image.png" alt="">
+                    <img class="img-slides" loading="lazy" src="./img/ourBlogBig2Image.png" alt="blog big images">
                 </article>
                 <article class="slide__card">
                     <div class="card_content">
-                        
+
                         <h3 class="profession">Graphic Design</h3>
-                      
+
                         <h4 class="other-card">35 Stellar Graphic Design Blogs to Keep You Educated and Inspired</h4>
                         <div class="card__author">
-                            <img loading="lazy" src="./img/ourBlogProfile.png" alt="">
+                            <img loading="lazy" src="./img/ourBlogProfile.png" alt=" blog profile">
                             <div class="card_blog">
                                 <h3 class="author-famili">Cristofer Westervelt</h3>
                                 <time class="date">January 25, 2021 5 min Read</time>
@@ -405,9 +444,41 @@
                             </div>
                         </div>
                     </div>
-                    <img class="img-slides" loading="lazy" src="./img/ourBlogBig1Image.png" alt="">
+                    <img class="img-slides" loading="lazy" src="./img/ourBlogBig1Image.png" alt="blog big images">
                 </article>
+                <article class="slide__card">
+                    <div class="card_content">
 
+                        <h3 class="profession">Graphic Design</h3>
+
+                        <h4 class="other-card">35 Stellar Graphic Design Blogs to Keep You Educated and Inspired</h4>
+                        <div class="card__author">
+                            <img loading="lazy" src="./img/ourBlogProfile.png" alt=" blog profile">
+                            <div class="card_blog">
+                                <h3 class="author-famili">Cristofer Westervelt</h3>
+                                <time class="date">January 25, 2021 5 min Read</time>
+
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-slides" loading="lazy" src="./img/ourBlogBig1Image.png" alt="blog big images">
+                </article>
+                <article class="slide__card">
+                    <div class="card_content">
+                        <h4 class="profession">Managing Director</h4>
+                        <h3 class="other-card">Ridiculously powerful 2021 iPad Pro may drop this month</h3>
+                        <div class="card__author">
+                            <img loading="lazy" src="./img/ourBlogProfile2.png" alt="blog profile">
+                            <div class="card_blog">
+
+                                <h3 class="author-name">Haylie Mango</h3>
+                                <time class="date">January 25, 2021 5 min Read</time>
+
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-slides" loading="lazy" src="./img/ourBlogBig2Image.png" alt="blog big images">
+                </article>
             </div>
             <div class="pagination">
 
@@ -422,8 +493,8 @@
             </div>
         </div>
     </section>
-    <section class="contact-us center">
-      
+    <section class="contact-us center" id="ContactUs">
+
         <p class="title-section position__title">Contact Us</p>
         <h2 class="heading position__heading">
             <p class="black">Feel </p>
@@ -440,8 +511,10 @@
                                 <h5 class="contact-card__title">Mail Us</h5>
                             </div>
                         </div>
-                        <a href="mailto:Support87@gmial.com" title="email" class="text-grey">Support87@gmial.com</a>
-                        <a href="mailto:ijkuiu874@gmial.com" title="email" class="text-grey">ijkuiu874@gmial.com</a>
+                        <a href="mailto:Support87@gmial.com" title="email"
+                            class="text-grey link">Support87@gmial.com</a>
+                        <a href="mailto:ijkuiu874@gmial.com" title="email"
+                            class="text-grey link">ijkuiu874@gmial.com</a>
                     </div>
                 </section>
                 <section class="contact-card">
@@ -454,9 +527,9 @@
                                 <h5 class="contact-card__title">Call Us</h5>
                             </div>
                         </div>
-                        <a href="tel:+88026598745" title="number tel" class="text-grey">+880 265 98745</a><span
+                        <a href="tel:+88026598745" title="number tel" class="text-grey link">+880 265 98745</a><span
                             class="red">(Toll free)</span>
-                        <a href="tel:+89585585589" title="number tel" class="text-grey">+895 855 85589</a>
+                        <a href="tel:+89585585589" title="number tel" class="text-grey link">+895 855 85589</a>
                     </div>
                 </section>
                 <section class="contact-card">
@@ -469,15 +542,15 @@
                                 <h5 class="contact-card__title">Visit Us</h5>
                             </div>
                         </div>
-                        <address class="text-grey">158 ralegih sit, houston, yk 5896,uk</address>
+                        <address class="text-grey link">158 ralegih sit, houston, yk 5896,uk</address>
                     </div>
                 </section>
             </div>
             <div class="form">
-               
-                <img loading="lazy" src="./img/ImageForm.png" class="img-form" alt="" max-height="auto"
+
+                <img loading="lazy" src="./img/ImageForm.png" class="img-form" alt="images form" max-height="auto"
                     max-width="auto">
-               
+
                 <form class="forms">
                     <h3 class="title-form">
                         <p class="black">Send Your</p>
@@ -494,12 +567,12 @@
                     <button type="submit" class="button position_btn">Send</button>
                 </form>
             </div>
-            <img class="maps" src="./img/Map.png" alt="">
+            <img class="maps" src="./img/Map.png" alt="images map">
             <div class="logos">
-                <img loading="lazy" src="./img/GroupLogo1.png" class="img-logo" alt="">
-                <img loading="lazy" class="img-logo" src="./img/FrameLogo 2.png" alt="">
-                <img loading="lazy" class="img-logo" src="./img/GroupLogo3.png" alt="">
-                <img loading="lazy" class="img-logo" src="./img/FrameLogo4.png" alt="">
+                <img loading="lazy" src="./img/GroupLogo1.png" class="img-logo" alt=" logo gluten free">
+                <img loading="lazy" class="img-logo" src="./img/FrameLogo 2.png" alt="logo butchery">
+                <img loading="lazy" class="img-logo" src="./img/GroupLogo3.png" alt=" logo organic product">
+                <img loading="lazy" class="img-logo" src="./img/FrameLogo4.png" alt="logo restaurant">
             </div>
     </section>
     <footer class="footer">
@@ -515,11 +588,11 @@
                 <h2 class="heading white position__heading footer-heading">Company</h2>
 
                 <ul>
-                    <li> <a href="/AboutUs" class="text-white">About Us</a></li>
-                    <li><a href="/OurWork" class="text-white">Our Work</a></li>
-                    <li><a href="/Client" class="text-white">Client</a></li>
+                    <li> <a href="#AboutUs" class="text-white">About Us</a></li>
+                    <li><a href="#OurWork" class="text-white">Our Work</a></li>
+                    <li><a href="#Client" class="text-white">Client</a></li>
                     <li><a href="/OurBlog" class="text-white">Our Blog</a></li>
-                    <li><a href="/ContatUs" class="text-white">Contact US</a>
+                    <li><a href="#ContatUs" class="text-white">Contact US</a></li>
                 </ul>
 
             </section>
@@ -565,6 +638,8 @@
     </footer>
 
     <script src="./src/js/toggle.js"></script>
+    <script src="./src/js/pagination.js"></script>
+    <script src="./src/js/pagination-two.js"></script>
 </body>
 
 </html>
